@@ -15,7 +15,7 @@ while True:
   print("Puntos Computer: ", win_computer)
   
 
-  user_option = input("piedra, papel o tijera => ").lower()
+  user_option = input("Esoge entre piedra, papel o tijera => ").lower()
   if not user_option in option:
     print("Esta opción no es válida")
     continue
@@ -30,7 +30,7 @@ while True:
   elif (user_option == "piedra"):
     if(computer_opt == "tijera"):
       print("Piedra gana a tijera")
-      print("User ganó!")
+      print("Usuario ganó!")
       win_user +=1
     else:
       print("Papel gana a piedra")
@@ -39,7 +39,7 @@ while True:
   elif (user_option == "papel"):
     if(computer_opt == "piedra"):
       print("Papel gana a piedra")
-      print("User ganó")
+      print("Usuario ganó")
       win_user +=1
     else:
       print("Tijera le gana al papel")
@@ -48,17 +48,17 @@ while True:
   elif (user_option == "tijera"):
     if(computer_opt == "papel"):
       print("Tijera le gana a papel")
-      print("User gana")
+      print("Usuario gana")
       win_user +=1
     else:
       print("Piedra le gana a tijera")
       print("Computer gana")
       win_computer+=1
   if win_computer == 2:
-    print("El compu ganó")
+    print("La computadora te ganó")
     break
   if win_user == 2:
-    print("Ganaste")
+    print("Excelente, Ganaste")
     break
   rounds+=1
     
